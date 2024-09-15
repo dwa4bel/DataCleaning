@@ -1,3 +1,5 @@
+![DataCleaning](DataCleaning.png)
+
 # DataCleaning
 Fundamentals of Data Cleaning
 
