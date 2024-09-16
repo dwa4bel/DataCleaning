@@ -109,12 +109,13 @@ df['column_name'] = df['column_name'].str.strip()
 # 8. Dealing with Invalid Data
 You may encounter invalid data that doesn't fit expected values. You can remove or correct it.
 
-``python
+```python
 # Remove rows where column_name has invalid data
 df_cleaned = df[df['column_name'].apply(lambda x: isinstance(x, (int, float)))]
 ```
 
 # Example Workflow
+
 ```python
 
 import pandas as pd
