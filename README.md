@@ -22,7 +22,7 @@ The first step is to load your data into a DataFrame using Pandas.
 ```python
 import pandas as pd
 # Load the data from a CSV file
-[df = pd.read_csv('data.csv')
+df = pd.read_csv('data.csv')
 ```
 
 ## 2. Handling Missing Data
