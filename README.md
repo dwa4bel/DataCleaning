@@ -60,7 +60,7 @@ duplicates = df[df.duplicated()]
 df_cleaned = df.drop_duplicates()
 ```
 
-4. Converting Data Types
+# 4. Converting Data Types
 Sometimes, data may be in the wrong format (e.g., strings instead of integers).
 
 ```python
@@ -71,7 +71,7 @@ df['column_name'] = pd.to_numeric(df['column_name'], errors='coerce')
 df['date_column'] = pd.to_datetime(df['date_column'], errors='coerce')
 ```
 
-5. Handling Outliers
+# 5. Handling Outliers
 Outliers can distort statistical analysis, so you may want to remove or treat them.
 
 Removing outliers using interquartile range (IQR):
@@ -88,7 +88,7 @@ upper_bound = Q3 + 1.5 * IQR
 df_cleaned = df[(df['column_name'] >= lower_bound) & (df['column_name'] <= upper_bound)]
 ```
 
-6. Renaming Columns
+# 6. Renaming Columns
 For consistency and readability, it’s a good practice to rename columns.
 
 ```python
