@@ -152,7 +152,8 @@ print(df.head())
 ```
 <!-- Break -->
 
-## Additional Cleaning Functions
+
+# Additional Cleaning Functions
 
    <details>
     <summary>Take a Look!</summary>
