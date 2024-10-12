@@ -196,6 +196,8 @@ updated_df, error_df_blank = remove_blank_records(cleaned_df, error_df_blank)
 # Validate emails
 updated_df_email, error_df_email = validate_emails(updated_df, error_df_email)
 
+# Validate phone numbers (assuming 'phone' is the column name)
+updated_df_phone, error_df_phone = validate_and_remove_invalid_phone_numbers(updated_df_email, 'phone', error_df_phone)
 
 # Save the cleaned DataFrame
 updated_df_phone.to_csv(f"{download_path}/cleaned_lifebear.csv", index=False)
@@ -205,8 +207,3 @@ garbage_df = pd.concat([error_df_blank, error_df_email, error_df_phone])
 
 # Save the garbage DataFrame
 garbage_df.to_csv(f"{garbage_path}/garbage_data.csv", index=False)
-
-
-
-
-
